@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Data Mining Lab</title>
+    <link rel="shortcut icon" href="static/favicon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/23822e3469.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Convergence' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="static/style1.css">
+</head>
+
+
+<body>
+
+    <!--navigation bar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between"
+        style="background-color: rgba(0,0,0,0.9);">
+        <a class="navbar-brand" href="#"><img src="static/nittlogo.png"> National Institute of Technology
+            Tiruchirappalli</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--navigation bar end-->
+
+    <!--tab layout start-->
+    <div class="row container-fluid">
+        <div class="col-lg-2 col-md-3 col-sm-3 mt-5 p-2">
+            <!--tabbed navigation start-->
+            <div class="nav flex-column nav-pills bg-light" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-introduction-tab" data-toggle="pill" href="#v-pills-introduction"
+                    role="tab" aria-controls="v-pills-introduction" aria-selected="true">Introduction</a>
+                <a class="nav-link" id="v-pills-experimentsList-tab" data-toggle="pill" href="#v-pills-experimentsList"
+                    role="tab" aria-controls="v-pills-experimentsList" aria-selected="false">List of Experiments</a>
+                <a class="nav-link" id="v-pills-audience-tab" data-toggle="pill" href="#v-pills-audience" role="tab"
+                    aria-controls="v-pills-audience" aria-selected="false">Target Audience</a>
+                <a class="nav-link" id="v-pills-prerequisites-tab" data-toggle="pill" href="#v-pills-prerequisites"
+                    role="tab" aria-controls="v-pills-prerequisites" aria-selected="false">Pre-Requisites</a>
+            </div>
+            <!--tabbed navigagion end-->
+        </div>
+        <div class="card p-5 mt-5 col-10">
+            <!--tabbed navigation content start-->
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-introduction" role="tabpanel"
+                    aria-labelledby="v-pills-introduction-tab">
+                    <h2>Data Mining Virtual Lab</h2>
+                    <hr>
+                    <h5 style="color: #444">
+                        The main objective of this lab is to impart the knowledge on how to implement
+                        classical models and algorithms in data mining and to characterize the kinds of patterns that
+                        can be discovered by association rule mining, classification and clustering.</h5>
+                </div>
+                <div class="tab-pane fade" id="v-pills-experimentsList" role="tabpanel"
+                    aria-labelledby="v-pills-experimentsList-tab">
+                    <h2>Experiments List</h2>
+                    <hr>
+                    <h5>
+                        <ul style="list-style: square;line-height: 2rem;"><br>
+                            <li><a href="#">Data Cleaning</a></li>
+                            <li><a href="#">Data Transformation</a></li>
+                            <li><a href="#">Naive-Bayes</a></li>
+                            <li><a href="Density/aim">DBSCAN</a></li>
+                            <li><a href="#">SVM</a></li>
+                            <li><a href="#">Appriori</a></li>
+                            <li><a href="#">KNN</a></li>
+                        </ul>
+                    </h5>
+                </div>
+                <div class="tab-pane fade" id="v-pills-audience" role="tabpanel" aria-labelledby="v-pills-audience-tab">
+                    <h2>Target Audience</h2>
+                    <hr><br><br>
+                    <h5>
+                        <p>In time of Covid-19, we all know the importance of Virtual education.</p><br>
+                        <p>This platform is useful for :</p>
+                        <p>Students: They can learn and practive various Data mining algortithms here</p>
+                        <p>Lecturers: They can use this platform for conducting virtual lab</p>
+                    </h5>
+                </div>
+                <div class="tab-pane fade" id="v-pills-prerequisites" role="tabpanel"
+                    aria-labelledby="v-pills-prerequisites-tab">
+                    <h2><label for="prerequisiteslist">Prerequisites</label></h2>
+                    <hr>
+                    <h5>
+                        <ul id="prerequisiteslist">
+                            <li>Basics of Mathematics</li>
+                            <li>Probability</li>
+                            <li>Basics of Python</li>
+                        </ul>
+                    </h5>
+                </div>
+            </div>
+            <!--tabbed navigation content end-->
+        </div>
+    </div>
+    <!--tab layout end-->
+
+    <!--footer start-->
+    <footer class="text-light pt-2 vlabs-footer d-flex flex-column fixed-bottom">
+        <div class="row px-5">
+            <div class="col d-flex flex-column">
+                <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+                <a href="http://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+                <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+                <a href="http://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+            </div>
+            <div class="col d-flex flex-column">
+                <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+                <span> Phone: General Information: 011-26582050 </span>
+                <span> Email: support@vlabs.ac.in </span>
+            </div>
+            <div class="col d-flex flex-column">
+                <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+                <div class="social-links">
+                    <a href="https://twitter.com/TheVirtualLabs">
+                        <i class="fab fa-twitter fa-2x" style="color: #55acee;"></i>
+                    </a>
+                    <a class="" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+                        <i class="fab fa-facebook fa-2x" style="color: #3b5998;"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+                        <i class="fab fa-youtube fa-2x" style="color: #e52d27;"></i>
+                    </a>
+                    <a href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+                        <i class="fab fa-linkedin fa-2x" style="color: #2867B2;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
